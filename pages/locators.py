@@ -13,6 +13,6 @@ class LoginPageLocators:
 class AddToBasket:
     ADD_TO_BASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")
     NAME_GOODS = (By.CSS_SELECTOR, ".product_main  h1")
-    GOODS_IN_BASKET = (By.CSS_SELECTOR, "#messages")
+    GOODS_IN_BASKET = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div > strong")
     PRICE_GOODS = (By.CSS_SELECTOR, ".product_main > .price_color")
-
+    PRICE_IN_BASKET = (By.CSS_SELECTOR, "#messages > div.alert.alert-safe.alert-noicon.alert-info.fade.in > div > p:nth-child(1) > strong")
