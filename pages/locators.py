@@ -16,3 +16,16 @@ class AddToBasket:
     GOODS_IN_BASKET = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div > strong")
     PRICE_GOODS = (By.CSS_SELECTOR, ".product_main > .price_color")
     PRICE_IN_BASKET = (By.CSS_SELECTOR, "#messages > div.alert.alert-safe.alert-noicon.alert-info.fade.in > div > p:nth-child(1) > strong")
+
+
+class ProductPageLocators:
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div.alertinner")
+    ANY_ELEMENT = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div.alertinner")
+
+
+class BasePageLocators:
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_LINK = (By.CSS_SELECTOR, "div.basket-mini.pull-right a")
+    EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner > p")
+    PRODUCT_IN_BASKET = (By.CSS_SELECTOR, "div.basket-title.hidden-xs > div > h2")
