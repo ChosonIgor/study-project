@@ -7,7 +7,7 @@ class ProductPage(BasePage):
     def adding_goods(self):
         button_add_to_basket = self.browser.find_element(*AddToBasket.ADD_TO_BASKET)
         button_add_to_basket.click()
-        self.solve_quiz_and_get_code()
+        # self.solve_quiz_and_get_code()
         # time.sleep(10)
 
     def check_of_goods(self):
